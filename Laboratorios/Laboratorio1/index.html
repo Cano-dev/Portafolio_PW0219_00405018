@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ray Tracing</h1>
+
+    <p>El <strong>raytracing</strong> o <strong>trazado</strong> de rayos es un algoritmo para síntesis de imágenes tridimensionales. 
+    Propuesto inicialmente por Turner Whitted en 1980, está basado en el algoritmo de determinación 
+    de superficies visibles de Arthur Appel denominado Ray Casting (1968). 
+    </p>
+    <p>
+        En el algoritmo <em>Ray Casting </em> se determinan las superficies visibles en la escena que se 
+        quiere sintetizar trazando rayos desde el observador (cámara) hasta la escena a través del 
+        plano de la imagen. Se calculan las intersecciones del rayo con los diferentes objetos de 
+        la escena y <u>aquella intersección que esté más cerca del observador</u> determina cuál es el objeto 
+        visible. 
+    </p>
+
+    <h2>Contenido</h2>
+    <ul>
+        <li><a href="#reflexion">Reflexion y refraccion</a></li>
+        <li><a href="#algoritmo">Algoritmo de Trazado de Rayos</a></li>
+        <li><a href="#fotones">Fotones de Luz</a></li>
+    </ul>
+    <hr>
+    <section id="reflexion"> 
+        <h3>Reflexion y refraccion</h3>
+        <p>Para simular los efectos de reflexión y refracción se trazan rayos recursivamente desde el punto
+            de intersección que se está sombreando dependiendo de las características del material del 
+            objeto intersecado. Para simular las sombras arrojadas se lanzan rayos desde el punto de intersección 
+            hasta las fuentes de luz. Estos rayos se conocen con el nombre de rayos de sombra (shadow rays). 
+        </p>
+        <img src="images/reflexion.png" alt="reflexion">
+    </section>
+    <hr>
+    <section id="algoritmo">
+        <h3>Algoritmo de Trazado de Rayos</h3>
+        <p>El algoritmo básico de trazado de rayos fue mejorado por Robert Cook (1985) para simular otros 
+            efectos en las imágenes mediante el muestreo estocástico usando un método de Montecarlo; entre 
+            estos efectos podemos citar el desenfoque de movimiento, la profundidad de campo o el 
+            submuestreo para eliminar efectos de dientes de sierra o aliasing en la imagen resultante.
+            En la actualidad, el algoritmo de trazado de rayos es la base de otros algoritmos más complejos
+             para síntesis de imágenes (mapeado de fotones, Metropolis, entre otros) que son capaces de 
+             simular efectos de iluminación global complejos como la mezcla de colores (color blending) 
+             o las cáusticas.  
+        </p>
+        <img src="images/algorimot.png" alt="Algoritmo">
+    </section>
+    <hr>
+    <section id="fotones"
+        <h3>Fotones de Luz</h3>
+        <p>El Ray Tracing (como lo llaman NVIDIA y AMD) o el Raytracing (como lo llama Microsoft), o en 
+            cristiano, el Trazado de Rayos, es un intento de simular cómo ven nuestros ojos la realidad.
+            Aunque nosotros veamos objetos y texturas de millones de colores y matices, lo que en realidad
+            estamos viendo es... luz. Más concretamente, fotones de luz. Cuando ponemos una manzana de color 
+            rojo ante nuestros ojos...¿por qué es roja y no morada, por ejemplo? Porque la manzana 
+            absorbe todo el espectro de color de la luz que recibe, menos el color rojo, y ese color 
+            que se refleja en forma de fotones de luz es el que llega hasta nuestros ojos. 
+    </p>
+        <img src="images/foton.jpg" alt="foton">
+    </section>
+   
+
+</body>
+</html>

@@ -17,8 +17,20 @@ body{
     background-color: cadetblue;
 }
 
+.botonera{
+    justify-content: space-around;
+    margin: 5px;
+    border: 10px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+
 .top, .bottom{
     height: 10%;
+    
     
 }
 .top{
@@ -35,13 +47,26 @@ body{
     align-items: center;
 }
 
+
+.morado{
+    background-color: blueviolet;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.faq{
+    background-color: crimson;
+}
 .extras{
     background-color: black;
-    color: aqua;
+    border-radius: 15px;
     opacity: 0.5;
     border: 1px  transparent;
-    /* width: 8%;
-    height: 50%; */
+    width: 100px;
+    height: 30px;
+    color: aqua;
 }
 
 

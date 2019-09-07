@@ -34,7 +34,7 @@ h1{
     margin: 10px;
     padding: 5px;
     border-radius: 45px;
-    opacity: 0.6;
+    opacity: 0.8;
     text-align:center;
     font-size: 80px;
     height: 130px;
@@ -55,15 +55,23 @@ a{
 .enlaces{
     display: flex;
     justify-content: center;
-    width: 60%;
-    flex-wrap: wrap;
-        
-    
+    width: 40%;
+    flex-wrap: wrap;    
+    flex-shrink: 0;
 }
 
 .enlaces>a{
     height: 50px;
     width: 50px;
+    margin: 4px;
+
+    
+}
+a>img{
+    width: inherit;
+    height: inherit;
+    border-radius: 30px;
+    border: 1px solid black;
 }
 
 .botonera{

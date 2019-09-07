@@ -1,0 +1,15 @@
+body{
+    background-image: url("../images/papyrus-dark.png");
+    background-repeat: repeat;
+}
+
+h1{
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+
+}

@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina&display=swap');
+
 html, body{
     height: 98%;
+    font-family: 'Baloo Bhaina', cursive;
 }
 body{
+    
     background-image: url("/Ejercicio2/images/background-menphis.png");
     border-image-repeat: repeat;
 }
@@ -13,8 +17,53 @@ body{
     height: 100%;
 }
 .content{
+    display: flex;
     height: 100%;
-    background-color: cadetblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+    font-family: inherit;
+}
+
+h1{
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 45px;
+    opacity: 0.6;
+    text-align:center;
+    font-size: 80px;
+    height: 130px;
+    background-color: aliceblue;    
+}
+
+hr{
+    color: white;
+    width: 40%;
+    
+}
+
+a{
+    color: white;
+}
+
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    flex-wrap: wrap;
+        
+    
+}
+
+.enlaces>a{
+    height: 50px;
+    width: 50px;
 }
 
 .botonera{
@@ -60,12 +109,13 @@ body{
     background-color: crimson;
 }
 .extras{
+    font-size: 18px;
     background-color: black;
-    border-radius: 15px;
+    border-radius: 25px;
     opacity: 0.5;
     border: 1px  transparent;
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 50px;
     color: aqua;
 }
 

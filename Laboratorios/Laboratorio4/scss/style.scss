@@ -1,0 +1,26 @@
+@import "components/variables";
+@import "components/mixin";
+
+
+section{
+    background-color: $bg_color;
+    border: $border_std;
+    width: 100%;
+    height: 100vh;  //El viewport no acepta 100% como tal (investiga el resto)
+
+    @include flex_std(row, nowrap, center, center);
+
+    p{
+        color: $font_color;
+        @include space_std(8px);
+    }
+
+    &:hover{
+        background-color: $bg2_color;
+        
+        p{
+            background-color: $border_color;
+        }
+        
+    }
+}

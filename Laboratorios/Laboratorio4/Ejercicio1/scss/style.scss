@@ -3,7 +3,13 @@
 @import "components/mixin";
 
 html, body{
+    height: $heigth_std;
+    font-family: $font;
+}
 
+body{
+    background-image: $background_image;
+    border-image-repeat: repeat;
 }
 
 

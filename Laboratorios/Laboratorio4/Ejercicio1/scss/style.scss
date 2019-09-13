@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina&display=swap');
+@import "components/variables";
+@import "components/mixin";
+
+html, body{
+
+}
+
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    flex-wrap: wrap;    
+    flex-shrink: 0;
+    a{
+        height: 50px;
+        width: 50px;
+        margin: 4px;
+    }
+}
+
+a{
+    img{
+        width: inherit;
+        height: inherit;
+        border-radius: 30px;
+        border: 1px solid black;
+    }
+}

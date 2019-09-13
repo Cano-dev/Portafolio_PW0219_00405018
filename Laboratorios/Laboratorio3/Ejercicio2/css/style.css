@@ -6,7 +6,7 @@ html, body{
 }
 body{
     
-    background-image: url("/Ejercicio2/images/background-menphis.png");
+    background-image: url("Ejercicio2/images/background-menphis.png");
     border-image-repeat: repeat;
 }
 
